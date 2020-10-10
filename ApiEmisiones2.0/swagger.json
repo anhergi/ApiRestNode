@@ -1,0 +1,67 @@
+{
+    "swagger": "2.0",
+    "title": "MySql Registation Swagger API",
+    "version": "1.0.0",
+    "description": "EndPoints to test the emifugi routes",
+    "host": "localhost:3000",
+    "basePath": "/",
+    "securityDefinitios": {
+        "bearerAuth": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "scheme": "bearer",
+            "in": "header"
+        }
+    },
+    "tags": [
+        {
+          "name": "EmiFugi",
+          "description": "API for EmiFugi data in the system"
+        }
+      ],
+      "schemes": [
+        "http"
+      ],
+      "consumes": [
+        "application/json"
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "paths": {
+        "/users": {
+          "get": {
+            "tags": [
+              "Usuarios"
+            ],
+            "summary": "Get all users",
+            "responses": {
+              "200": {
+                "description": "OK",
+                "schema": {
+                  
+                }
+              }
+            }
+          }
+        },
+        "/users/:id": {
+            "get": {
+                "tags": [
+                  "Usuario"
+                ],
+                "parameters": {
+                    "id": "string"
+                },
+                "summary": "Get user by Id",
+                "responses": {
+                  "200": {
+                    "description": "OK",
+                    "schema": {
+                    }
+                  }
+                }
+              }
+        }
+    }   
+}

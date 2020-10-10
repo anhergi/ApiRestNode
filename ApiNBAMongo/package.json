@@ -1,0 +1,13 @@
+{
+    "name": "Api NBA",
+    "version": "1.0.0",
+    "description": "Recuperar datos NBA de BBDD MongoDB",
+    "main": "index.js",
+    "author": "Antonio Herrero Gil",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "mongoose": "^5.9.15",
+        "morgan": "^1.10.0"
+    }
+}
